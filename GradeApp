@@ -1,0 +1,42 @@
+import java.io.Console;
+ 
+class GradeApp{
+         
+         
+    public static void main(String [] args){
+ 
+             
+            String result;
+         
+     
+        for(int i = 0; i < 10 ; ++i){
+            Console con = System.console();
+            String grade = con.readLine("Please Enter your grade in format of A , B , C , D  , F  ");
+             
+             
+            switch(grade){
+            case "A": result = "85-100%";
+                    System.out.println(result);
+                     
+            break;
+            case "B": result = "70-84%";
+                    System.out.println(result);
+                     
+            break;
+            case "C": result = "55-69%"; 
+                    System.out.println(result);
+                    ;
+            break;
+            case "D": result = "40-54%"; 
+                    System.out.println(result);
+                     
+            break;
+            default : result = "FAILED";
+                    System.out.println(result);
+                     
+            }
+        }   
+             
+    }
+ 
+}
